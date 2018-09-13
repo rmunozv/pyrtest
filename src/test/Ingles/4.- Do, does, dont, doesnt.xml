@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<pyr>
+	<test nombre="Unit 1">
+		<style>
+			span.resaltar {
+				font-weight:bold;
+				color:red;
+				font-size:6vw;
+			}
+			.respuesta_resaltada {
+				font-weight:bold;
+				color:yellow;
+				font-size:6vw;
+			}
+			.miniatura { border:2px solid white; margin:5; float:left; height:64; width:120;}
+			#ingles_01 h2 {color:navy;text-decoration:underline;margin-bottom:8px;}
+			#ingles_01 u {color:red;}
+			#ingles_01 span {padding-left:20px;display:block;}
+		</style>	
+		<about>
+			<div id="ingles_01">
+			Para Prueba 1 de <b>Ingles</b>
+			<p></p>
+			<h2>Regla de Oro</h2>
+			<span>Para <b>he, she, it</b> se agrega <u>S</u>, como doe<u>s</u>, goe<u>s</u>, play<u>s</u>.</span>
+			<h2>Regla de Plata</h2>
+			<span>Si la respuesta es <b>NO</b> debe terminar con <u>n't</u>, como do<u>n't</u>, does<u>n't</u>, is<u>n't</u>, are<u>n't</u>.</span>
+			</div>
+		</about>
+
+		<preguntas>
+			<pregunta>
+				<enunciado height="30%">
+				Escoge la short answer adecuada.
+				<br/><br/>
+				<span class="resaltar">
+				Anna and Jane milk the cow ?
+				</span>
+				</enunciado>
+				<alternativas height="70%">
+					<alternativa id="1"  puntaje="0">Yes, she do</alternativa>
+					<alternativa id="2"  puntaje="0">Yes, she does</alternativa>
+					<alternativa id="3"  puntaje="0">Yes, they does</alternativa>
+					<alternativa id="4"  puntaje="1">Yes, they do</alternativa>
+				</alternativas>
+			</pregunta>
+
+			<pregunta>
+				<enunciado height="30%">
+				Escoge la short answer adecuada según género y número.
+				<br/><br/>
+				<span class="resaltar">
+				You and your friends milk the cow ?
+				</span>
+				</enunciado>
+				<alternativas height="70%">
+					<alternativa id="1"  puntaje="0">Yes, I do</alternativa>
+					<alternativa id="2"  puntaje="1">Yes, we do</alternativa>
+					<alternativa id="3"  puntaje="0">Yes, they do</alternativa>
+					<alternativa id="4"  puntaje="0">Yes, she does</alternativa>
+				</alternativas>
+			</pregunta>
+
+			<pregunta>
+				<enunciado height="30%">
+				Escoge la short answer adecuada según género y número.
+				<br/><br/>
+				<span class="resaltar">
+				Anna milk the cow ?
+				</span>
+				</enunciado>
+				<alternativas height="70%">
+					<alternativa id="1"  puntaje="0">Yes, he do</alternativa>
+					<alternativa id="2"  puntaje="1">Yes, she does</alternativa>
+					<alternativa id="3"  puntaje="0">Yes, it does</alternativa>
+					<alternativa id="4"  puntaje="0">Yes, she do</alternativa>
+				</alternativas>
+			</pregunta>
+
+			<pregunta>
+				<enunciado height="30%">
+				Escoge la short answer adecuada según género y número.
+				<br/><br/>
+				<span class="resaltar">
+				The farmer milk the cow ?
+				</span>
+				</enunciado>
+				<alternativas height="70%">
+					<alternativa id="1"  puntaje="0">Yes, I do</alternativa>
+					<alternativa id="2"  puntaje="0">Yes, we do</alternativa>
+					<alternativa id="3"  puntaje="1">Yes, he does</alternativa>
+					<alternativa id="4"  puntaje="0">Yes, he do</alternativa>
+				</alternativas>
+			</pregunta>
+
+			<pregunta>
+				<enunciado height="30%">
+				Escoge la short answer adecuada según género y número.
+				<br/><br/>
+				<span class="resaltar">
+				Anna and Tom milk the cow ?
+				</span>
+				</enunciado>
+				<alternativas height="70%">
+					<alternativa id="1"  puntaje="1">Yes, they do</alternativa>
+					<alternativa id="2"  puntaje="0">Yes, she does</alternativa>
+					<alternativa id="3"  puntaje="0">Yes, they does</alternativa>
+					<alternativa id="4"  puntaje="0">Yes, she do</alternativa>
+				</alternativas>
+			</pregunta>
+
+			<pregunta>
+				<enunciado height="30%">
+				Escoge la short answer adecuada según género y número.
+				<br/><br/>
+				<span class="resaltar">
+				You and your cat play with a laser beam ?
+				</span>
+				</enunciado>
+				<alternativas height="70%">
+					<alternativa id="1"  puntaje="0">Yes, they do</alternativa>
+					<alternativa id="2"  puntaje="1">Yes, we do</alternativa>
+					<alternativa id="3"  puntaje="0">Yes, it do</alternativa>
+					<alternativa id="4"  puntaje="0">Yes, we does</alternativa>
+				</alternativas>
+			</pregunta>
+
+
+		</preguntas>
+	</test>	
+</pyr>

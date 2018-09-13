@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<pyr>
+	<test nombre="Tablas de Multiplicar">
+		<style>
+			span.resaltar {
+				font-weight:bold;
+				color:red;
+				font-size:8vw;
+			}
+			.miniatura { border:2px solid white; margin:5; float:left; height:60%; }
+			@media only screen and (max-width: 680px) {
+				.miniatura { border:1px solid black; margin:2; float:left; height:44%; }
+			}
+		</style>	
+		<about mosaico="no">
+			Para practicar las tablas de Multiplicar desde 1 a 10.<br/>
+			<recurso id="tablas" />
+		</about>
+		<recursos>
+			<recurso tipo="img" id="tablas" src="tablas.jpg" class="miniatura" />
+		</recursos>	
+		<preguntas>
+			<pregunta repetir="5">
+				<enunciado>
+					¿Cuánto es
+					<span class="resaltar"><numero id="A" min="2" max="5" valor="@random" /></span> 
+					x
+					<span class="resaltar"><numero id="B" min="2" max="10" valor="@random" /></span> 
+					?
+				</enunciado>
+				<responder tipo="numero" correcta="{A}*{B}" />
+			</pregunta>
+			
+		</preguntas>
+	</test>	
+</pyr>

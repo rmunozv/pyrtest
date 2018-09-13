@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test>
+	<style type="text/css">
+		img.bandera { 
+			margin:5; 
+			border:1px solid black; 
+		}
+	</style>
+	<about>Banderas de todo el mundo.</about>
+	<recursos>
+			<grupo id="banderas">
+				<global class="bandera" height="80" />
+				<recurso tipo="img" id="fr" src="http://flags.fmcdn.net/data/flags/w580/fr.png" region="Europa" caption="Francia" />
+				<recurso tipo="img" id="gb" src="http://flags.fmcdn.net/data/flags/w580/gb.png" region="Europa" caption="Inglaterra" />
+				<recurso tipo="img" id="it" src="http://flags.fmcdn.net/data/flags/w580/it.png" region="Europa" caption="Italia" />
+				<recurso tipo="img" id="de" src="http://flags.fmcdn.net/data/flags/w580/de.png" region="Europa" caption="Alemania" />
+				<recurso tipo="img" id="es" src="http://flags.fmcdn.net/data/flags/w580/es.png" region="Europa" caption="España" />
+				<recurso tipo="img" id="ch" src="http://flags.fmcdn.net/data/flags/w580/ch.png" region="Europa" caption="Suiza" />
+
+				<recurso tipo="img" id="us" src="http://flags.fmcdn.net/data/flags/w580/us.png" region="América" caption="Estados Unidos" />
+				<recurso tipo="img" id="br" src="http://flags.fmcdn.net/data/flags/w580/br.png" region="América" caption="Brasil" />
+				<recurso tipo="img" id="mx" src="http://flags.fmcdn.net/data/flags/w580/mx.png" region="América" caption="Mexico" />
+				<recurso tipo="img" id="ca" src="http://flags.fmcdn.net/data/flags/w580/ca.png" region="América" caption="Canadá" />
+				<recurso tipo="img" id="cl" src="http://flags.fmcdn.net/data/flags/w580/cl.png" region="América" caption="Chile" />
+				<recurso tipo="img" id="jm" src="http://flags.fmcdn.net/data/flags/w580/jm.png" region="América" caption="Jamaica" />
+
+				<recurso tipo="img" id="kr" src="http://flags.fmcdn.net/data/flags/w580/kr.png" region="Asia" caption="Corea" />
+				<recurso tipo="img" id="jp" src="http://flags.fmcdn.net/data/flags/w580/jp.png" region="Asia" caption="Japón" />
+				<recurso tipo="img" id="cn" src="http://flags.fmcdn.net/data/flags/w580/cn.png" region="Asia" caption="China" />
+				
+				<recurso tipo="img" id="se" src="http://flags.fmcdn.net/data/flags/w580/se.png" region="Nórdicos" caption="Suecia"    />
+				<recurso tipo="img" id="no" src="http://flags.fmcdn.net/data/flags/w580/no.png" region="Nórdicos" caption="Noruega"   />
+				<recurso tipo="img" id="dk" src="http://flags.fmcdn.net/data/flags/w580/dk.png" region="Nórdicos" caption="Dinamarca" />
+				<recurso tipo="img" id="fi" src="http://flags.fmcdn.net/data/flags/w580/fi.png" region="Nórdicos" caption="Finlandia" />
+				<recurso tipo="img" id="is" src="http://flags.fmcdn.net/data/flags/w580/is.png" region="Nórdicos" caption="Islandia"  />
+				
+				<recurso tipo="img" id="au" src="http://flags.fmcdn.net/data/flags/w580/au.png" region="Oceania" caption="Australia" />
+
+			</grupo>						
+	</recursos>
+	<preguntas>
+			<pregunta repetir="10">
+				<enunciado>
+					¿ Cuál es este país ?<br/>
+					<recurso id="@random" grupo="banderas" renderas="img" /> <!-- con renderas="img" se expande con recurso.resuelto -->
+				</enunciado>
+				<alternativas generar="4" grupo="banderas" renderas="caption" >
+				</alternativas>		
+			</pregunta>
+	</preguntas>
+</test>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<test>
+	<style type="text/css">
+		.consombra img.bandera { 
+			margin:5; 
+			border:2px solid white; 
+			box-shadow: -6px 9px 16px 2px dimgray;
+		}
+	</style>
+	<about>
+		Con este test conocerás las banderas de América.<br/>
+	</about>
+	<recursos>
+			<grupo id="banderas_w580">
+				<global class="bandera" height="80" />
+				<recurso tipo="img" id="ar" src="http://flags.fmcdn.net/data/flags/w580/ar.png" caption="Argentina" />
+				<recurso tipo="img" id="bo" src="http://flags.fmcdn.net/data/flags/w580/bo.png" caption="Bolivia" />
+				<recurso tipo="img" id="br" src="http://flags.fmcdn.net/data/flags/w580/br.png" caption="Brasil" />
+				<recurso tipo="img" id="cl" src="http://flags.fmcdn.net/data/flags/w580/cl.png" caption="Chile" />
+				<recurso tipo="img" id="co" src="http://flags.fmcdn.net/data/flags/w580/co.png" caption="Colombia" />
+				<recurso tipo="img" id="pe" src="http://flags.fmcdn.net/data/flags/w580/pe.png" caption="Perú" />
+				<recurso tipo="img" id="py" src="http://flags.fmcdn.net/data/flags/w580/py.png" caption="Paraguay" />
+				<recurso tipo="img" id="uy" src="http://flags.fmcdn.net/data/flags/w580/uy.png" caption="Uruguay" />
+				<recurso tipo="img" id="ve" src="http://flags.fmcdn.net/data/flags/w580/ve.png" caption="Venezuela" />
+			</grupo>						
+			<recurso tipo="img" height="40%" id="sa-banderas" src="img/sudamerica-banderas.jpg" caption="Sudamérica y sus banderas." mosaico="no" />
+	</recursos>
+	<preguntas>
+			<pregunta repetir="5">
+				<enunciado>
+					¿De qué país es esta bandera?<br/>
+					<div class="consombra">
+					<recurso id="@random" grupo="banderas_w580" renderas="img" />
+					</div>
+				</enunciado>
+				<alternativas generar="4" grupo="banderas_w580" renderas="caption" >
+				</alternativas>		
+			</pregunta>
+
+			<pregunta repetir="5">
+				<enunciado>
+					¿ Cuál es la bandera de <recurso id="@random" grupo="banderas_w580" renderas="caption" /> ? <!-- con renderas="caption" se expande con recurso.caption -->
+				</enunciado>
+				<alternativas generar="4" grupo="banderas_w580" renderas="img" > <!-- se generan 4 alternativas, se muestran como fotos -->
+				</alternativas>		
+			</pregunta>
+
+	</preguntas>
+</test>

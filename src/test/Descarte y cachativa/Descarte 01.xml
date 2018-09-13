@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<pyr>
+
+	<test nombre="Descarte">
+		<about>
+			Cuando has eliminado las alternativas incorrectas, <u>la que queda debe ser la correcta</u>.
+		</about>
+		<style>
+			enunciado .biopic {
+		    height: 200;
+		    padding: 4;
+		    margin: 10;
+		    background-color: white;
+				margin:5; 
+				border:1px solid black; 
+				height:90%;
+				float:right;
+				box-shadow: -6px 9px 16px 2px dimgray;
+			}
+			span.laPregunta {width:33%;color:red;float:left;text-align:right;}
+			.pista {
+				border:2px solid #5f2929;
+				background-color:#fffebe;
+				display:block;
+				padding:3px;
+				margin-top:12px;
+			}
+			.pista::before {content:"Pista: ";}
+			
+		</style>
+		<recursos>
+			<global height="128" localdir="." class="biopic" /> <!-- Se guardaran en la misma carpeta que este archivo; altura 128 para todos -->
+			<recurso tipo="img" id="beethoven" caption="Beethoven" src="img/beethoven.jpg" />
+			<recurso tipo="img" id="hitler" src="img/hitler.jpg" />
+			<recurso tipo="img" id="prat" src="img/prat.jpg" />
+			<recurso tipo="img" id="vangogh" src="img/vangogh.jpg" />
+		</recursos>
+		<preguntas>
+		
+			<pregunta>
+				<enunciado>
+					<span class="laPregunta">¿Quién es este personaje?</span>
+					<recurso id="beethoven" />
+				</enunciado>
+				<alternativas>
+					<alternativa id="1" puntaje="0">Inti Muñoz</alternativa>
+					<alternativa id="2" puntaje="0">Arturo Prat</alternativa>
+					<alternativa id="3" puntaje="0">Violeta Parra </alternativa>
+					<alternativa id="4" puntaje="1">Beethoven</alternativa>
+				</alternativas>		
+			</pregunta>
+
+			<pregunta>
+				<enunciado>
+					¿ Cuánto es 696 + 517 ?<br/>
+					<span class="pista">
+					Basta con sumar los últimos dígitos 6 y 7 y fíjate en el último dígito, el de las unidades.</span>
+				</enunciado>
+				<alternativas>
+					<alternativa id="1" puntaje="1">1.213</alternativa>
+					<alternativa id="2" puntaje="0">1.100</alternativa>
+					<alternativa id="3" puntaje="0">1.202</alternativa>
+					<alternativa id="4" puntaje="0">2.105</alternativa>
+				</alternativas>		
+			</pregunta>
+
+			<pregunta>
+				<enunciado>
+					<img height="64" src="http://flags.fmcdn.net/data/flags/w580/za.png" />
+					¿ En cuál continente está Sudáfrica ?
+				</enunciado>
+				<alternativas>
+					<alternativa id="1" puntaje="0">Asia</alternativa>
+					<alternativa id="2" puntaje="1">África</alternativa>
+					<alternativa id="3" puntaje="0">Europa</alternativa>
+					<alternativa id="4" puntaje="0">América</alternativa>
+				</alternativas>		
+			</pregunta>			
+
+			<pregunta>
+				<enunciado>¿Quién de estos es Beethoven?</enunciado>
+				<alternativas>
+					<alternativa id="1" puntaje="0"><recurso id="prat" /></alternativa>
+					<alternativa id="2" puntaje="0"><recurso id="hitler" /></alternativa>
+					<alternativa id="3" puntaje="0"><recurso id="vangogh" /></alternativa>
+					<alternativa id="4" puntaje="1"><recurso id="beethoven" /></alternativa>
+				</alternativas>	
+			</pregunta>
+		</preguntas>
+	</test>	
+</pyr>

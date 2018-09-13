@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<test>
+	<style type="text/css">
+		.enunciado img.foto { 
+			margin:5; 
+			border:1px solid black; 
+			height:90%;
+			float:right;
+			box-shadow: -6px 9px 16px 2px dimgray;
+		}
+		span.laPregunta {float:left;text-align:right;}
+
+		@media only screen and (max-width: 767px) {
+			.enunciado img.foto { height:85%; }
+			span.laPregunta {width:30%;}
+		}
+		
+	</style>
+	<about>
+		A ver si puedes reconocer estas famosas pinturas y a sus autores.
+	</about>
+	<recursos>
+			<grupo id="pinturas">
+				<global class="foto" height="140" localdir="img" />
+				<recurso tipo="img" id="monalisa" src="monalisa.jpg"  caption="La Mona Lisa"   title="Leonardo Da Vinci" artista="davinci"/>
+				<recurso tipo="img" id="guernica" src="guernica.jpg"  caption="El Guernica"    title="Pablo Picasso"  />
+				<recurso tipo="img" id="meninas"  src="meninas.jpg"   caption="Las Meninas"    title="Velasquez"  />
+				<recurso tipo="img" id="pmemoria" src="persistencia_memoria.jpg" caption="La persistencia de la memoria"    title="Salvador Dalí"  />
+				<recurso tipo="img" id="noche"    src="noche_estrellada.jpg"     caption="La noche estrellada" title="Van Gogh"  />
+				<recurso tipo="img" id="frontera" src="frontera.jpg"  caption="Autorretrato en la frontera entre México y EE.UU." title="Frida Kahlo"  />
+			</grupo>						
+			<grupo id="artistas">
+				<global class="foto" height="140" localdir="img" />
+				<recurso tipo="img" id="frida"   src="frida.jpg"   caption="Frida Kahlo"      title="Artista mexicana" />
+				<recurso tipo="img" id="dali"    src="dali.jpg"    caption="Salvador Dalí"    title="Artista español" />
+				<recurso tipo="img" id="vangogh" src="vangogh.jpg" caption="Vincent Van Gogh" title="Pintor holandés"  />
+				<recurso tipo="img" id="velasquez" src="velasquez.jpg" caption="Diego Velasquez" title="Pintor español"  />
+				<recurso tipo="img" id="picasso" src="picasso.jpg" caption="Pablo Picasso"    title="Pintor español"  />
+				<recurso tipo="img" id="davinci" src="davinci.jpg" caption="Leonardo DaVinci"    title="Pintor italiano"  />
+			</grupo>						
+	</recursos>
+	
+	<preguntas>
+			<pregunta repetir="3">
+				<enunciado>
+					<span class="laPregunta">¿ Cómo se llama esta obra ? </span>
+					<recurso id="@random" grupo="pinturas" renderas="img" />
+				</enunciado>
+				<alternativas generar="4" grupo="pinturas" renderas="caption" >
+				</alternativas>		
+			</pregunta>
+			
+			<pregunta repetir="3">
+				<enunciado height="30%">
+					¿Cuál de estas obras es <b><recurso id="@random" grupo="pinturas" renderas="caption" /></b>?
+				</enunciado>
+				<alternativas height="70%" generar="4" grupo="pinturas" renderas="img" >
+				</alternativas>		
+			</pregunta>
+
+			<pregunta repetir="3">
+				<enunciado>
+					<span class="laPregunta">¿ Cómo se llama este artista ? </span>
+					<recurso id="@random" grupo="artistas" renderas="img" />
+				</enunciado>
+				<alternativas generar="4" grupo="artistas" renderas="caption" >
+				</alternativas>		
+			</pregunta>
+			
+			<pregunta repetir="3">
+				<enunciado>
+					¿Quién de estos es <b><recurso id="@random" grupo="artistas" renderas="caption" /></b> ?
+				</enunciado>
+				<alternativas generar="4" grupo="artistas" renderas="img" >
+				</alternativas>		
+			</pregunta>
+	</preguntas>
+</test>

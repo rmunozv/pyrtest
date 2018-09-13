@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<pyr><test>
+<about> Las consecuencias es lo que una acción produce o puede producir. Puede ser bueno o malo.<br/>
+   Para evitar las malas consecuencias hay que anticiparlas.</about>
+<preguntas eheight='30%'>
+<pregunta>
+  <enunciado>¿Qué ocurre si camino con los cordones desabrochados?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Alguien puede pisar los cordones y me caeré.</alternativa>
+    <alternativa id='2' puntaje='0'>Los cordones se pueden ensuciar o mojar.</alternativa>
+    <alternativa id='3' puntaje='0'>Se me puede salir el zapato.</alternativa>
+    <alternativa id='4' puntaje='0'>Pensarán que no sé abrocharlos.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Y si no me ducho durante varios días?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Comenzaré a oler mal.</alternativa>
+    <alternativa id='2' puntaje='0'>Será un buen ahorro de agua, jabón y champú.</alternativa>
+    <alternativa id='3' puntaje='0'>Me puedo enfermar.</alternativa>
+    <alternativa id='4' puntaje='0'>Mis padres se enojarán.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuál es la consecuencia de andar descalzo en invierno?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Se me enfrían los pies y me puedo enfermar.</alternativa>
+    <alternativa id='2' puntaje='0'>Puedo pisar un huevo y quebrarlo.</alternativa>
+    <alternativa id='3' puntaje='0'>Se me ensucian los pies.</alternativa>
+    <alternativa id='4' puntaje='0'>Nada malo puede pasar.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿ Qué ocurre si estudio para una prueba ?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Me sacaré una buena nota.</alternativa>
+    <alternativa id='2' puntaje='0'>Me felicitarán.</alternativa>
+    <alternativa id='3' puntaje='0'>Me aburriré.</alternativa>
+    <alternativa id='4' puntaje='0'>Me perderé un programa de TV.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Si Julieta me saluda y yo no le digo nada …</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Pensará que ella no me importa y que soy un maleducado.</alternativa>
+    <alternativa id='2' puntaje='0'>No pasa nada, sólo se responde el saludo a veces.</alternativa>
+    <alternativa id='3' puntaje='0'>Pensará que soy sordo y no le escucho.</alternativa>
+    <alternativa id='4' puntaje='0'>Pensará que soy mudo y no puedo hablar.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Si lanzo una piedra sin mirar puedo …</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Golpear a alguien y provocarle serias lesiones.</alternativa>
+    <alternativa id='2' puntaje='0'>Botar un avión.</alternativa>
+    <alternativa id='3' puntaje='0'>Provocar mucho ruido.</alternativa>
+    <alternativa id='4' puntaje='0'>Alcanzar una gran distancia.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Si juego con fósforos puedo …</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Provocar un incendio.</alternativa>
+    <alternativa id='2' puntaje='0'>Desperdiciar los fósforos.</alternativa>
+    <alternativa id='3' puntaje='0'>Aprender muchas cosas.</alternativa>
+    <alternativa id='4' puntaje='0'>Calentar mi leche.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Si un domingo duermo pocas horas, el lunes…</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>tendré mucho sueño y se me hará difícil el colegio.</alternativa>
+    <alternativa id='2' puntaje='0'>puedo faltar a clases.</alternativa>
+    <alternativa id='3' puntaje='0'>podré dormir en clases.</alternativa>
+    <alternativa id='4' puntaje='0'>estaré tan animoso y energizado como siempre.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Si cruzo la calle sin mirar…</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Me pueden atropellar.</alternativa>
+    <alternativa id='2' puntaje='0'>Me puedo tropezar y caer.</alternativa>
+    <alternativa id='3' puntaje='0'>Me puedo perder.</alternativa>
+    <alternativa id='4' puntaje='0'>Me pueden retar.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuál es la consecuencia de no ordenar mis cosas?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Me costará mucho encontrar lo que necesito.</alternativa>
+    <alternativa id='2' puntaje='0'>Ahorraré tiempo.</alternativa>
+    <alternativa id='3' puntaje='0'>Habrá desorden.</alternativa>
+    <alternativa id='4' puntaje='0'>Me obligarán a ordenar.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Si me quedo callado…</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>los demás no sabrán lo que pienso o siento.</alternativa>
+    <alternativa id='2' puntaje='0'>significa que soy bueno para guardar secretos.</alternativa>
+    <alternativa id='3' puntaje='0'>los demás podrán adivinar lo que necesito.</alternativa>
+    <alternativa id='4' puntaje='0'>no molestaré a nadie.</alternativa>
+  </alternativas>
+</pregunta>
+</preguntas>
+</test>
+</pyr>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<pyr>
+	<test nombre="Tabla del 7">
+		<style>
+			span.preguntar {
+				font-weight:bold;
+				color:red;
+				font-size:18vw;
+			}
+			span.responder {
+				font-weight:bold;
+				color:yellow;
+				font-size:10vw;
+			}
+			.miniatura { border:2px solid white; margin:5; float:left; height:60%; }
+			@media only screen and (max-width: 680px) {
+				.miniatura { border:1px solid black; margin:2; float:left; height:44%; }
+			}
+		</style>	
+		<about mosaico="no">
+			Para practicar la tabla del 7.<br/>
+			<recurso id="tablas" />
+		</about>
+		<recursos>
+			<recurso tipo="img" id="tablas" src="tablas.jpg" class="miniatura" />
+			<grupo id="Tabla">
+				<recurso tipo="texto" id="1"   pregunta="7x1"  respuesta="7" />
+				<recurso tipo="texto" id="2"   pregunta="7x2"  respuesta="14" />
+				<recurso tipo="texto" id="3"   pregunta="7x3"  respuesta="21" />
+				<recurso tipo="texto" id="4"   pregunta="7x4"  respuesta="28" />
+				<recurso tipo="texto" id="5"   pregunta="7x5"  respuesta="35" />
+				<recurso tipo="texto" id="6"   pregunta="7x6"  respuesta="42" />
+				<recurso tipo="texto" id="7"   pregunta="7x7"  respuesta="49" />
+				<recurso tipo="texto" id="8"   pregunta="7x8"  respuesta="56" />
+				<recurso tipo="texto" id="9"   pregunta="7x9"  respuesta="63" />
+				<recurso tipo="texto" id="10"  pregunta="7x10" respuesta="70" />
+				<recurso tipo="texto" id="11"  pregunta="7x11" respuesta="77" />
+				<recurso tipo="texto" id="12"  pregunta="7x12" respuesta="84" />
+			</grupo>
+		</recursos>	
+		<preguntas>
+			<pregunta repetir="12">
+				<enunciado>
+				<span class="preguntar"><recurso id="@random" grupo="Tabla" renderas="pregunta" /></span>
+				</enunciado>
+				<alternativas generar="4" renderas="respuesta" grupo="Tabla" class="responder" />
+			</pregunta>
+		</preguntas>
+	</test>	
+</pyr>

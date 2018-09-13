@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<pyr>
+	<test nombre="Practice">
+		<style>
+			span.resaltar {
+				font-weight:bold;
+				color:red;
+				font-size:6vw;
+			}
+			.miniatura { border:2px solid white; margin:5; float:left; height:64; width:120;}
+		</style>	
+		<about>
+			Para practicar temas surtidos de <b>Ingles</b>
+		</about>
+		<recursos>
+			<grupo id="Granja">
+				<recurso tipo="texto" id="1" ingles="Sweep"   espanol="Barrer" />
+				<recurso tipo="texto" id="2" ingles="Harvest" espanol="Cosechar" />
+				<recurso tipo="texto" id="3" ingles="Milk"    espanol="Ordeñar" />
+				<recurso tipo="texto" id="4" ingles="Run"     espanol="Correr" />
+				<recurso tipo="texto" id="5" ingles="Sleep"   espanol="Dormir" />
+				<recurso tipo="texto" id="6" ingles="Walk"    espanol="Caminar" />
+				<recurso tipo="texto" id="7" ingles="Smile"   espanol="Sonreír" />
+			</grupo>
+		</recursos>	
+		<preguntas>
+			<pregunta repetir="5">
+				<enunciado>
+					¿Cómo se traduce <span class="resaltar"><recurso id="@random" grupo="Granja" renderas="ingles" /></span> ?
+				</enunciado>
+				<alternativas generar="4" renderas="espanol" grupo="Granja" />
+			</pregunta>
+			
+		</preguntas>
+	</test>	
+</pyr>

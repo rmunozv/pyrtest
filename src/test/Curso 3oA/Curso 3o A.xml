@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<pyr>
+
+	<test nombre="Mi curso 3o A">
+		<style>
+			.miniatura {border:1px solid black;}
+			</style>
+		<about>
+			A ver qué tanto sabes de tu curso!
+			<table>
+				<tr>
+					<td><img src="http://www.villamc.cl/img/insvmc.png" height="60" /></td>
+					<td>Tercero A 2018 Villa Maria College, Machali</td>
+				</tr>
+			</table>
+			
+			</about>
+		<recursos>
+			<grupo id="alumnos">
+				<!-- Se guardaran en la carpeta res; altura 128 para todos; asignar class "miniatura" -->
+				<global height="150" localdir="res" class="miniatura" />
+				
+				<!-- Ejemplos de selector: 
+					recursos grupo#alumnos recurso[sexo='m'] 
+				-->
+				<recurso tipo="img" sexo="m" caption="Alex"        id="alex" src="alex.png" />
+				<recurso tipo="img" sexo="m" caption="Cristóbal"   id="cristobal" src="cristobal.png" />
+				<recurso tipo="img" sexo="m" caption="Daniel"      id="daniel" src="daniel.png" />
+				<recurso tipo="img" sexo="m" caption="Inti"        id="inti" src="inti.png" />
+				<recurso tipo="img" sexo="m" caption="Roberto"     id="roberto" src="roberto.png" />
+				<recurso tipo="img" sexo="m" caption="Agustín Pavez"   id="agustinp" src="agustinp.png" />
+				<recurso tipo="img" sexo="m" caption="Joaquín Valenzuela"  id="joaquinv" src="joaquinv.png" />
+				<recurso tipo="img" sexo="m" caption="Fernando Vega" id="fernandov" src="fernandov.png" />
+				<recurso tipo="img" sexo="m" caption="Fernando Cáceres" id="fernandoc" src="fernandoc.png" />
+				<recurso tipo="img" sexo="m" caption="Juan Pablo"  id="juanpablo" src="juanpablo.png" />
+				<recurso tipo="img" sexo="m" caption="Julián"      id="julian" src="julian.png" />
+				<recurso tipo="img" sexo="m" caption="Miguel"      id="miguel" src="miguel.png" />
+				<recurso tipo="img" sexo="m" caption="Diego"       id="diego" src="diego.png" />
+				<recurso tipo="img" sexo="m" caption="Alvaro"      id="alvaro" src="alvaro.png" />
+				<recurso tipo="img" sexo="m" caption="Martín"      id="martin" src="martin.png" />
+				<recurso tipo="img" sexo="m" caption="Agustín M."  id="agustinm" src="agustinm.png" />
+				
+				<recurso tipo="img" sexo="f" caption="Agustina"    id="agustina" src="agustina.png" />
+				<recurso tipo="img" sexo="f" caption="Cameron"     id="cameron" src="cameron.png" />
+				<recurso tipo="img" sexo="f" caption="Catalina"    id="catalina" src="catalina.png" />
+				<recurso tipo="img" sexo="f" caption="Emilia"      id="emilia" src="emilia.png" />
+				<recurso tipo="img" sexo="f" caption="Fernanda"    id="fernanda" src="fernanda.png" />
+				<recurso tipo="img" sexo="f" caption="Florencia"   id="florencia" src="florencia.png" />
+				<recurso tipo="img" sexo="f" caption="Isabel"      id="isabel" src="isabel.png" />
+				<recurso tipo="img" sexo="f" caption="Isidora"     id="isidora" src="isidora.png" />
+				<recurso tipo="img" sexo="f" caption="Matilda"     id="matilda" src="matilda.png" />
+				<recurso tipo="img" sexo="f" caption="Valentina"   id="valentina" src="valentina.png" />
+			</grupo>
+		</recursos>
+		<preguntas>
+			
+			<pregunta repetir="6">
+				<enunciado>
+					¿Cómo se llama esta niña?<br/>
+					<recurso id="@random" grupo="alumnos" filtro="sexo:f" renderas="img" /> <!-- con renderas="img" se expande con recurso.resuelto -->
+				</enunciado>
+				<alternativas generar="4" grupo="alumnos" filtro="sexo:f" >
+				</alternativas>		
+			</pregunta>
+
+			<pregunta repetir="6">
+				<enunciado>
+					Pincha en la foto de <recurso id="@random" grupo="alumnos" filtro="sexo:m" renderas="caption" /> <!-- con renderas="caption" se expande con recurso.caption -->
+				</enunciado>
+				<alternativas generar="4" grupo="alumnos" filtro="sexo:m" renderas="img" > <!-- se generan 4 alternativas, se muestran como fotos -->
+				</alternativas>		
+			</pregunta>
+
+			<!--<pregunta>
+				<enunciado>
+					¿Como se llama?<br/>
+					<recurso id="matilda" />
+				</enunciado>
+				<alternativas>
+					<alternativa id="1" puntaje="0">Emilia</alternativa>
+					<alternativa id="2" puntaje="0">Catalina</alternativa>
+					<alternativa id="3" puntaje="0">Isabel</alternativa>
+					<alternativa id="4" puntaje="1">Matilda</alternativa>
+				</alternativas>		
+			</pregunta>-->
+
+		</preguntas>
+	</test>	
+</pyr>

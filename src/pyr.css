@@ -1,0 +1,425 @@
+/* Hoja de estilo para pyr */
+* {
+	  /* Para que los tamaños se determinen incluyendo bordes, padding, margin, etc */
+    box-sizing: border-box;
+}
+
+body {
+  color:white;
+  background-color: #202025;
+  font-family: Calibri, Verdana, Courier ;
+  margin:0;
+  padding:0;
+}
+
+table {color:black;}
+
+div#container {
+	padding-bottom: 50px;
+}
+
+a:link , a:visited {
+	color:white; pointer:hand;
+}
+
+div.categoria {
+	padding:5;
+	margin:0; margin-bottom:2;
+	font-size:3em;
+	font-weight: bold;
+	background-color: blanchedalmond;
+	background-color: white;
+	border:3px solid white;
+	color:royalblue;
+	text-align: center; vertical-align: middle;
+	/*float: right; clear: both;
+	min-width:100%;*/
+}
+
+div.selected { 
+	color:midnightblue; 
+	color:white;
+	background-color: #cc3d57;
+	border:3px solid gray;
+}
+
+h1 {
+	background-color: seagreen; 
+	padding:6;
+	margin:0; 
+	margin-bottom:3;
+	font-size:4.8vw;
+	height:10%;
+}
+
+div#footer {
+	background-color:rgb(120,120,140,0.8);
+	background-color:#787888;
+	color:lightgray;
+	font-size:2vw;
+	text-align: center;
+	position: fixed;
+	display: block;
+	bottom :0;
+	width:100%;
+	/*min-height:24px;*/
+	min-height:5%;
+	z-index:-1;
+}
+
+div#about {
+	background-color:white;
+	color: black;
+	width:100%;
+	height:85%;
+	font-size:2em;
+	padding: 5;
+	position: relative;
+}
+
+div#about #btn_comenzar {
+	color: #f9f9f9;
+	background: #0095ff;
+  border: 1px solid #0077cc;
+	display:inline-block;
+	position: absolute;
+	bottom:10px;
+	right:20px;
+	padding:8 18 8 18;
+	font-size:3vw;
+	font-weight: bold;
+	text-align: center; 
+	vertical-align: middle;
+	z-index:1;
+}
+
+div.pregunta { /* Contenedor de enunciado y alternativas*/
+	width:100%;
+	float:left;
+	border:1px solid gray;
+	margin-bottom:20px;
+}
+
+div.enunciado_y_alternativas {
+	height: 68%;
+}
+
+div.enunciado {
+	background-color:white; color:black;
+	width:100%; height:50%;
+	padding: 5px;
+	font-size:4.0vw;
+}
+@media only screen and (max-width: 767px) {
+
+   div.enunciado {font-size:4.0vw;}
+
+}
+
+div.pregunta .alternativas { /* contenedor de las 4 (o mas) alternativas */
+	height:50%;
+}
+
+div.pregunta .alternativa { /* Los 50% deberian ser calculados en base a la cantidad. Para 4 es 50% */
+	float:left;
+	width:50%; height:50%;
+	text-align: center;
+	border:4px solid black;
+	font-size:5vw;
+	display: table; /* Contendra un span con display:table-cell; middle */
+}
+
+div.pregunta .alternativa span { display: table-cell; vertical-align: middle; max-width:120px;}
+
+div.pregunta .alternativa:hover {
+	border-color:black;
+	background-color:#a2f56e;/*verde*/
+	background-color:#9fc1f3; /*celeste*/
+	background-color: #f3f29f;  /*amarillo*/
+	color:black;
+}
+
+div.respuestaActual {
+	border:4px solid red !important;
+}
+
+div.barranavegar { 
+	width:100%; height:10%; 
+	background-color:#564355;
+	font-size:5vh;
+	display: table;
+}
+
+div.barranavegar span {display: table-cell; vertical-align: middle; height:100%; font-weight: bolder;background-position: center;}
+div.barranavegar .boton { margin:0; text-align:center; min-width: 60;}
+div.barranavegar .boton:hover { color:#1e7fc3; cursor:hand;}
+div.barranavegar span.left { float:left; margin-left:10; background-image:url("img/left1.png");background-size:contain;background-repeat:no-repeat;}
+div.barranavegar span.right { float:right; margin-right:10; background-image:url("img/right1.png");background-size:contain;background-repeat:no-repeat;}
+
+div.barranavegar .stats { width:70%; text-align: center; display: table-cell; vertical-align: middle;}
+
+div#testarea {
+	min-height:80%;
+}
+ 
+div#progress {
+	background-color:#415d4b;
+	width:100%;
+	height:20px;
+}
+
+span.CuadroDeProgreso {
+	width:1%; /* Este va a variar a 1/N en la App */
+	text-align:center;
+	border-bottom:1px solid grey;
+	border-right:1px solid #87928a;
+	display:inline-block;
+	min-height:20px;
+}
+span.CuadroDeProgreso:last-child {
+	border-right:0px;
+}
+
+div#progress span.contestada { /* Cuando la pregunta fue contestada */
+	border-bottom:2px solid red;
+}
+
+div#progress span.recontestada { /* Cuando la pregunta fue contestada por 2a,3a,... vez */
+	border-bottom:2px solid yellow;
+}
+
+div#progress span.nocontestada { /* Cuando la pregunta no ha sido contestada o se retiró una respuesta anterior */
+	/* Esta no se usará. Para crear el efecto se usará solo la clase contestada con add/remove */
+	background-color: gray;
+}
+
+
+div#progress span.current { /**/
+	background-color:#ccf5a7;
+}
+
+
+div#progress span.buena { /* Despues de evaluar, respuesta buena */
+	background-image: url("img/buena.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div#progress span.mala { /* Despues de evaluar, respuesta mala */
+	background-image: url("img/mala.png");
+  background-repeat: no-repeat;
+  background-position: center;}
+
+div#progress span.sincontestar { /* Despues de evaluar, no se contestó */
+	border-bottom:none;
+}
+
+div#recursos {
+}
+
+div#recursos img {
+}
+
+div#aviso { /* Disponible durante el desarrollo */
+	display:none;
+	color: red;
+  background-color: #ffffffc7;
+  position: absolute;
+  margin: 50;
+  border: 1px dotted gray;
+  width: 80%;
+  height: 50%;
+}
+
+.enunciado div.fotografia{ /* Contenedor para una imagen y un subtitulo, cuando se usa como parte del enunciado */
+	/* Usar;  <div class="fotografia">  <img...>  <div class="subtitle">subtitulo de la foto</div>  </div>    */
+	float: right;
+	/*position: relative;  // Asi era originalmente */
+	position:sticky;
+}
+
+.alternativa div.fotografia{ /* Contenedor para una imagen y un subtitulo, cuando se usa en una alternativa */
+	/* Usar;  <div class="fotografia">  <img...>  <div class="subtitle">subtitulo de la foto</div>  </div>    */
+	float: initial;
+	position: relative;
+}
+
+div.subtitle { /* Subtitulo de una fotografia */
+	position: absolute;
+  bottom: 5;
+  left: 5;
+  width: calc(100% - 10px);
+  background: #000b;
+  color: white;
+  font-family: monospace;
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.alternativa div.subtitle { /* Subtitulo de una fotografia, cuando está en una alternativa */
+	position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 0px);
+  background: #000b;
+  color: white;
+  font-family: monospace;
+  font-size: 2.2vw;
+  text-align: center;
+}
+
+div#evaluacion {
+	background:#f0f0f0; color:black;
+	margin:0;
+	padding:20;
+	height:75%;
+}
+
+div#evaluacion div#estadisticas {
+	color: #561f09;
+  font-size: 4.0vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+div#evaluacion img#btn_evaluar {
+  height: 30%;
+}
+
+div#evaluacion div#resultados {
+	color: #255b8a;
+  font-size: 5vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+div#autoavanzar {
+	font-size:3.6vw;
+	float:right;
+	display: none; /*Ocultar para ahorrar espacio*/
+}
+
+#div.autoavanzar #chk_autoavanzar { }
+
+#div.autoavanzar #msg_autoavanzar { }
+
+div#logros {
+	text-align: right;
+  border: 0px solid white;
+  display: inline;
+  float: right;
+  clear: both;
+  font-size:3vw;
+  padding:2px;
+}
+
+div#logros table {
+  border: 1px solid black;
+  margin-top: -8px;
+  margin-right: -8px;
+  height: 115%;
+}
+
+div#logros table td {
+	text-align:center;
+	border: 1px solid white;
+	min-width: 40px;
+	color:white;
+	font-weight:bolder;
+	font-size:1.5em;
+}
+
+div#logros table td:nth-child(1) {
+	background-color: #005d80;
+}
+div#logros table td:nth-child(2) {
+	background-color: #ffa500;
+	color:#005d80;
+}
+div#logros table td:nth-child(3) {
+	background-color: #a0283d;
+}
+
+div#premios {
+	color: #de2525;
+  border-top: 1px solid #de2525;
+  margin-top: 3px;
+  padding-top: 6;
+  border-bottom: 1px solid #de2525;
+  background: #ffe4c4;
+  margin-right: 40;
+  margin-left: 40;
+}
+
+div#premios img {
+	height: 60;
+   border: 2px solid #563001;
+   box-shadow: -6px 9px 16px 2px dimgrey;
+   margin-left: 15px;
+   vertical-align:middle;
+   margin-bottom:12px;
+}
+
+div.responder {
+	height:50%;
+	}
+
+div.responder_kbd {
+	height: 100%;
+  xxbackground: red;
+  width: 50%;
+  float: left;
+}
+
+div.responder span.responder_value {
+	font-family:courier;
+	font-size:25vw;
+	font-weight:bolder;
+	display: inline;
+	float:right;
+	width:50%;
+	height:100%;
+	text-align:center;
+	background:transparent;
+	color:yellow;
+}
+
+span.tecla {
+	float: left;
+  padding: 5px;
+  width: 33%;
+  height: 25%;
+  text-align: center;
+  border: 2px solid white;
+  vertical-align: middle;
+  font-size: 6vw;
+  font-weight:bolder;
+  border-color:gray;
+}
+
+.tecla_backspace {
+	background-image: url("img/backspace.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color:red !important;
+}
+
+.tecla_ok {
+	background-image: url("img/enter-key.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-color:green !important;
+}
+
+div.btn_recoger {
+    font-size: smaller;
+    display: inline;
+    background: green;
+    color: white;
+    border-width: 2px;
+    border-style: ridge;
+    margin-left: 12px;
+    padding: 4px;
+}

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<pyr><test>
+<about> Para la prueba de sociedad: climas, paralelos/meridianos, etc…</about>
+<preguntas eheight='30%'>
+<pregunta>
+  <enunciado>Qué nombre reciba una mitad de la tierra?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Hemisferio</alternativa>
+    <alternativa id='2' puntaje='0'>Polo</alternativa>
+    <alternativa id='3' puntaje='0'>Trópico</alternativa>
+    <alternativa id='4' puntaje='0'>Meridiano</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Chile queda en …</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>El hemisferio sur</alternativa>
+    <alternativa id='2' puntaje='0'>El hemisferio norte</alternativa>
+    <alternativa id='3' puntaje='0'>El trópico de cáncer</alternativa>
+    <alternativa id='4' puntaje='0'>El polo sur</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Las líneas imaginarias que van de polo a polo se llaman…</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Meridiano</alternativa>
+    <alternativa id='2' puntaje='0'>Paralelo</alternativa>
+    <alternativa id='3' puntaje='0'>Trópico</alternativa>
+    <alternativa id='4' puntaje='0'>Polo</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuál es falsa?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Chile queda en el hemisferio norte.</alternativa>
+    <alternativa id='2' puntaje='0'>Hay 2 polos, el norte y el sur.</alternativa>
+    <alternativa id='3' puntaje='0'>El paralelo que divide a los hemisferios Norte y Sur se llama El Ecuador.</alternativa>
+    <alternativa id='4' puntaje='0'>También existen los hemisferios Este y Oeste.</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Las líneas imaginarias que recorren la tierra de este a oeste son</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Paralelos</alternativa>
+    <alternativa id='2' puntaje='0'>Meridianos</alternativa>
+    <alternativa id='3' puntaje='0'>Ecuadores</alternativa>
+    <alternativa id='4' puntaje='0'>Trópicos</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Los trópicos son un tipo de</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Paralelo</alternativa>
+    <alternativa id='2' puntaje='0'>Meridiano</alternativa>
+    <alternativa id='3' puntaje='0'>Zona climática</alternativa>
+    <alternativa id='4' puntaje='0'>Mapa</alternativa>
+  </alternativas>
+</pregunta>
+</preguntas>
+</test>
+</pyr>

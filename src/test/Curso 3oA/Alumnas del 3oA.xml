@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<pyr>
+
+	<test nombre="Niñas del 3o A">
+		<style>
+			.miniatura {border:2px solid pink;}
+			#about {font-size:3vw;}
+			</style>
+		<about>
+			A ver qué tanto sabes de tu curso!
+			<table id="about">
+				<tr>
+					<td><img src="http://www.villamc.cl/img/insvmc.png" height="60" /></td>
+					<td>
+						En este test aparecerán las niñas del Tercero A 2018 del Villa Maria College, Machali.<p></p>
+						Trata de identificarlas a todas.
+						</td>
+				</tr>
+			</table>
+			
+			</about>
+		<recursos>
+			<grupo id="alumnos">
+				<!-- Se guardaran en la carpeta res; altura 128 para todos; asignar class "miniatura" -->
+				<global height="150" localdir="res" class="miniatura" />
+				
+				<!-- Ejemplos de selector: 
+					recursos grupo#alumnos recurso[sexo='m'] 
+				-->
+				
+				<recurso tipo="img" sexo="f" caption="Agustina"    id="agustina" src="agustina.png" />
+				<recurso tipo="img" sexo="f" caption="Cameron"     id="cameron" src="cameron.png" />
+				<recurso tipo="img" sexo="f" caption="Catalina"    id="catalina" src="catalina.png" />
+				<recurso tipo="img" sexo="f" caption="Emilia"      id="emilia" src="emilia.png" />
+				<recurso tipo="img" sexo="f" caption="Fernanda"    id="fernanda" src="fernanda.png" />
+				<recurso tipo="img" sexo="f" caption="Florencia"   id="florencia" src="florencia.png" />
+				<recurso tipo="img" sexo="f" caption="Isabel"      id="isabel" src="isabel.png" />
+				<recurso tipo="img" sexo="f" caption="Isidora"     id="isidora" src="isidora.png" />
+				<recurso tipo="img" sexo="f" caption="Matilda"     id="matilda" src="matilda.png" />
+				<recurso tipo="img" sexo="f" caption="Valentina"   id="valentina" src="valentina.png" />
+			</grupo>
+		</recursos>
+		<preguntas>
+			
+			<pregunta repetir="6">
+				<enunciado height="20%">
+					Pincha en la foto de <b><recurso id="@random" grupo="alumnos" filtro="sexo:f" renderas="caption" /></b>
+				</enunciado>
+				<alternativas height="80%" generar="4" grupo="alumnos" filtro="sexo:f" renderas="img" >
+				</alternativas>		
+			</pregunta>
+
+			<pregunta repetir="6">
+				<enunciado height="60%">
+					¿Cómo se llama esta niña?<br/>
+					<recurso id="@random" grupo="alumnos" filtro="sexo:f" renderas="img" /> <!-- con renderas="img" se expande con recurso.resuelto -->
+				</enunciado>
+				<alternativas height="40%" generar="4" grupo="alumnos" filtro="sexo:f" >
+				</alternativas>		
+			</pregunta>
+
+		</preguntas>
+	</test>	
+</pyr>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<pyr>
+	<test nombre="Tabla del 5">
+		<style>
+			span.preguntar {
+				font-weight:bold;
+				color:red;
+				font-size:18vw;
+			}
+			span.responder {
+				font-weight:bold;
+				color:yellow;
+				font-size:10vw;
+			}
+			.miniatura { border:2px solid white; margin:5; float:left; height:60%; }
+			@media only screen and (max-width: 680px) {
+				.miniatura { border:1px solid black; margin:2; float:left; height:44%; }
+			}
+		</style>	
+		<about mosaico="no">
+			Para practicar la tabla del 5.<br/>
+			<recurso id="tablas" />
+		</about>
+		<recursos>
+			<recurso tipo="img" id="tablas" src="tablas.jpg" class="miniatura" />
+			<grupo id="Tabla">
+				<recurso tipo="texto" id="1"   pregunta="5x1"  respuesta="5" />
+				<recurso tipo="texto" id="2"   pregunta="5x2"  respuesta="10" />
+				<recurso tipo="texto" id="3"   pregunta="5x3"  respuesta="15" />
+				<recurso tipo="texto" id="4"   pregunta="5x4"  respuesta="20" />
+				<recurso tipo="texto" id="5"   pregunta="5x5"  respuesta="25" />
+				<recurso tipo="texto" id="6"   pregunta="5x6"  respuesta="30" />
+				<recurso tipo="texto" id="7"   pregunta="5x7"  respuesta="35" />
+				<recurso tipo="texto" id="8"   pregunta="5x8"  respuesta="40" />
+				<recurso tipo="texto" id="9"   pregunta="5x9"  respuesta="45" />
+				<recurso tipo="texto" id="10"  pregunta="5x10" respuesta="50" />
+				<recurso tipo="texto" id="11"  pregunta="5x11" respuesta="55" />
+				<recurso tipo="texto" id="12"  pregunta="5x12" respuesta="60" />
+			</grupo>
+		</recursos>	
+		<preguntas>
+			<pregunta repetir="12">
+				<enunciado>
+				<span class="preguntar"><recurso id="@random" grupo="Tabla" renderas="pregunta" /></span>
+				</enunciado>
+				<alternativas generar="4" renderas="respuesta" grupo="Tabla" class="responder" />
+			</pregunta>
+		</preguntas>
+	</test>	
+</pyr>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<test>
+	<style type="text/css">
+		.enunciado img.foto { 
+			margin:5; 
+			border:1px solid black; 
+			height:90%;
+			float:right;
+			box-shadow: -6px 9px 16px 2px dimgray;
+		}
+		span.laPregunta {color:red;float:left;text-align:right;}
+
+		@media only screen and (max-width: 767px) {
+			.enunciado img.foto { height:85%; }
+			span.laPregunta {width:30%;}
+		}
+		
+	</style>
+	<about>Reconoce los países asociados a estas imágenes.</about>
+	<recursos>
+			<grupo id="fotos">
+				<global class="foto" height="140" localdir="img" />
+				<recurso tipo="img" id="cl" src="moai.jpg"             caption="Chile"          title="Moais en Isla de Pascua" />
+				<recurso tipo="img" id="fr" src="eiffel.jpg"           caption="Francia"        title="La torre Eiffel"  />
+				<recurso tipo="img" id="it" src="pisa.jpg"             caption="Italia"         title="Torre inclinada de Pisa"  />
+				<recurso tipo="img" id="gb" src="rueda.jpg"            caption="Inglaterra"     title="La rueda del Milenio"  />
+				<recurso tipo="img" id="in" src="tajmahal.png"         caption="India"          title="El Palacio de Taj Mahal"  />
+				<recurso tipo="img" id="pe" src="Macchu Picchu.jpg"    caption="Perú"           title="Ruinas de Macchu Picchu"  />
+				<recurso tipo="img" id="br" src="Cristo Redentor.jpg"  caption="Brasil"         title="Cristo Redentor"  />
+				<recurso tipo="img" id="us" src="Estatua Libertad.jpg" caption="Estados Unidos" title="Estatua de la Libertad"  />
+				<recurso tipo="img" id="eg" src="piramides.jpg"        caption="Egipto"         title="Pirámides"  />
+			</grupo>						
+	</recursos>
+	<preguntas>
+			<pregunta repetir="5">
+				<enunciado>
+					<span class="laPregunta">¿ En qué país está este lugar ? </span>
+					<recurso id="@random" grupo="fotos" renderas="img" /> <!-- con renderas="img" se expande con recurso.resuelto -->
+				</enunciado>
+				<alternativas generar="4" grupo="fotos" renderas="caption" >
+				</alternativas>		
+			</pregunta>
+			
+			<pregunta repetir="5">
+				<enunciado>
+					Escoge la foto que representa a
+					<recurso id="@random" grupo="fotos" renderas="caption" />
+				</enunciado>
+				<alternativas generar="4" grupo="fotos" renderas="img" >
+				</alternativas>		
+			</pregunta>
+	</preguntas>
+</test>

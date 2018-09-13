@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<pyr><test>
+<about> <center><img src='test/_img/La historia de Manu.jpg' /> </center></about>
+<preguntas eheight='30%'>
+<pregunta>
+  <enunciado>¿Quién es el personaje principal?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Una niña</alternativa>
+    <alternativa id='2' puntaje='0'>Un niño</alternativa>
+    <alternativa id='3' puntaje='0'>Un adulto</alternativa>
+    <alternativa id='4' puntaje='0'>Un animal</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Quién relata la historia?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Alguien más</alternativa>
+    <alternativa id='2' puntaje='0'>El padre</alternativa>
+    <alternativa id='3' puntaje='0'>Un animal</alternativa>
+    <alternativa id='4' puntaje='0'>La niña</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuál es el paisaje donde vive Manú?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Altiplano</alternativa>
+    <alternativa id='2' puntaje='0'>Bosque</alternativa>
+    <alternativa id='3' puntaje='0'>Ciudad</alternativa>
+    <alternativa id='4' puntaje='0'>Desierto</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>Manú es una niña…</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Aymara</alternativa>
+    <alternativa id='2' puntaje='0'>Chilena</alternativa>
+    <alternativa id='3' puntaje='0'>Mapuche</alternativa>
+    <alternativa id='4' puntaje='0'>Chipana</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuál es el conflicto <u>principal</u>?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Una niña desea estudiar pero sus padres no quieren</alternativa>
+    <alternativa id='2' puntaje='0'>Una ola arrasará la ciudad</alternativa>
+    <alternativa id='3' puntaje='0'>La niña le ha mentido a sus padres</alternativa>
+    <alternativa id='4' puntaje='0'>La niña tiene por mascota un cóndor</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuál afirmación es <b>FALSA</b> para el final de la historia?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Encuentran las llamas perdidas</alternativa>
+    <alternativa id='2' puntaje='0'>La gente de la ciudad se salvó del tsunami</alternativa>
+    <alternativa id='3' puntaje='0'>Todos comprendieron que es importante compartir culturas</alternativa>
+    <alternativa id='4' puntaje='0'>Gente de la ciudad y del pueblo se hicieron amigos</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Por qué se burlaban de Manú los niños de la escuela?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Pensaban que estaba loca</alternativa>
+    <alternativa id='2' puntaje='0'>Porque eran malos</alternativa>
+    <alternativa id='3' puntaje='0'>Porque no entendían lo que decía</alternativa>
+    <alternativa id='4' puntaje='0'>Porque era nueva en la escuela</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Por qué los padres de Manú no quieren enviarla a estudiar a la ciudad?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Porque no enseñan en Aymara y Manú va a perder su cultura</alternativa>
+    <alternativa id='2' puntaje='0'>Porque queda muy lejos</alternativa>
+    <alternativa id='3' puntaje='0'>Porque los niños son malos</alternativa>
+    <alternativa id='4' puntaje='0'>Porque Manú no sabe hablar castellano</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cuál <u>ciudad</u> de Chile se menciona?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Iquique</alternativa>
+    <alternativa id='2' puntaje='0'>Arica</alternativa>
+    <alternativa id='3' puntaje='0'>Rancagua</alternativa>
+    <alternativa id='4' puntaje='0'>Chipana</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Qué había conseguido el padre de Manú para su comunidad?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Electricidad</alternativa>
+    <alternativa id='2' puntaje='0'>Agua potable</alternativa>
+    <alternativa id='3' puntaje='0'>Una pizzería</alternativa>
+    <alternativa id='4' puntaje='0'>Televisión</alternativa>
+  </alternativas>
+</pregunta>
+<pregunta>
+  <enunciado>¿Por qué Chipana iba desapareciendo poco a poco?</enunciado>
+  <alternativas>
+    <alternativa id='1' puntaje='1'>Porque los niños se iban a estudiar a la ciudad y no volvían.</alternativa>
+    <alternativa id='2' puntaje='0'>Porque una ola gigante iba a arrasar el pueblo.</alternativa>
+    <alternativa id='3' puntaje='0'>Porque quedaba poca comida para las llamas.</alternativa>
+    <alternativa id='4' puntaje='0'>Porque quedaba muy lejos de la ciudad.</alternativa>
+  </alternativas>
+</pregunta>
+</preguntas>
+</test>
+</pyr>

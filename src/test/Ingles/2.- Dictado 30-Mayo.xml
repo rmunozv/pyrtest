@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<pyr>
+	<test nombre="Practice">
+		<style>
+			span.resaltar {
+				font-weight:bold;
+				color:red;
+				font-size:6vw;
+			}
+			.miniatura { border:2px solid white; margin:5; float:left; height:64; width:120;}
+		</style>	
+		<about>
+			Partes del cuerpo de animales.
+		</about>
+		<recursos>
+			<grupo id="Granja">
+				<recurso tipo="texto" id="1"  ingles="Claw"    espanol="Garra" />
+				<recurso tipo="texto" id="2"  ingles="Tail"    espanol="Cola" />
+				<recurso tipo="texto" id="3"  ingles="Horn"    espanol="Cuerno" />
+				<recurso tipo="texto" id="4"  ingles="Head"    espanol="Cabeza" />
+				<recurso tipo="texto" id="5"  ingles="Leg"     espanol="Pata" />
+				<recurso tipo="texto" id="6"  ingles="Feather" espanol="Pluma" />
+				<recurso tipo="texto" id="7"  ingles="Beak"    espanol="Pico" />
+				<recurso tipo="texto" id="8"  ingles="Ear"     espanol="Oreja" />
+			</grupo>
+		</recursos>	
+		<preguntas>
+			<pregunta repetir="7">
+				<enunciado>
+					¿Cómo se traduce <span class="resaltar"><recurso id="@random" grupo="Granja" renderas="ingles" /></span> ?
+				</enunciado>
+				<alternativas generar="4" renderas="espanol" grupo="Granja" />
+			</pregunta>
+			
+			<pregunta repetir="7">
+				<enunciado>
+					¿Cómo se dice <span class="resaltar"><recurso id="@random" grupo="Granja" renderas="espanol" /></span> en inglés ?
+				</enunciado>
+				<alternativas generar="4" renderas="ingles" grupo="Granja" />
+			</pregunta>
+
+		</preguntas>
+	</test>	
+</pyr>

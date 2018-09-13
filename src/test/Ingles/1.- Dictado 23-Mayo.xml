@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<pyr>
+	<test nombre="Practice">
+		<style>
+			span.resaltar {
+				font-weight:bold;
+				color:red;
+				font-size:6vw;
+			}
+			.miniatura { border:2px solid white; margin:5; float:left; height:64; width:120;}
+		</style>	
+		<about>
+			Animales de granja. Dictado del <b>mi-23-mayo</b>.
+		</about>
+		<recursos>
+			<grupo id="Granja">
+				<recurso tipo="texto" id="1"  ingles="Bull"   espanol="Toro" />
+				<recurso tipo="texto" id="2"  ingles="Chick"  espanol="Pollito" />
+				<recurso tipo="texto" id="3"  ingles="Cow"    espanol="Vaca" />
+				<recurso tipo="texto" id="4"  ingles="Donkey" espanol="Burro" />
+				<recurso tipo="texto" id="5"  ingles="Goat"   espanol="Cabra" />
+				<recurso tipo="texto" id="6"  ingles="Goose"  espanol="Ganso" />
+				<recurso tipo="texto" id="7"  ingles="Horse"  espanol="Caballo" />
+				<recurso tipo="texto" id="8"  ingles="Sheep"  espanol="Oveja" />
+				<recurso tipo="texto" id="9"  ingles="Hen"    espanol="Gallina" />
+				<recurso tipo="texto" id="10" ingles="Turkey" espanol="Pavo" />
+			</grupo>
+		</recursos>	
+		<preguntas>
+			<pregunta repetir="10">
+				<enunciado>
+					¿Cómo se traduce <span class="resaltar"><recurso id="@random" grupo="Granja" renderas="ingles" /></span> ?
+				</enunciado>
+				<alternativas generar="4" renderas="espanol" grupo="Granja" />
+			</pregunta>
+			
+			<pregunta repetir="10">
+				<enunciado>
+					¿Cómo se dice <span class="resaltar"><recurso id="@random" grupo="Granja" renderas="espanol" /></span> en inglés ?
+				</enunciado>
+				<alternativas generar="4" renderas="ingles" grupo="Granja" />
+			</pregunta>
+
+		</preguntas>
+	</test>	
+</pyr>
